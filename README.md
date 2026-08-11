@@ -2,7 +2,7 @@
 
 > A tiny creative desktop for making things that feel like you. ♡
 
-CL★Q! is a browser-based photo/video editor built around a playful, `.exe`-style desktop metaphor. Instead of a conventional editor UI, tools (camera, filters, stickers, frames, captions, export) live in draggable windows on a fake desktop.
+CL★Q! is a browser-based photobooth around a playful, `.exe`-style desktop metaphor. Instead of a conventional editor UI, tools (camera, filters, stickers, frames, captions, export) live in draggable windows on a fake desktop.
 
 **Repo:** https://github.com/deacodes/CLIQ
 
