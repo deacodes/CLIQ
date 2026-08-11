@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>CL★Q! — frutiger aero photobooth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Pixelify+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=open-sauce-one@400,500,600,700,800&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="css/cliq.css">
+</head>
+
+<body>
+  <div class="immersive-bg" id="immersiveBg"></div>
+  <div class="immersive-tint" id="immersiveTint"></div>
+  <div class="desktop">
+    <div class="aero-bubble b1"></div>
+    <div class="aero-bubble b2"></div>
+    <div class="aero-bubble b3"></div>
+    <div class="aero-bubble b4"></div>
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+    <section class="landing" id="landing">
+      <div class="landing-inner">
+        <div class="landing-top">
+          <div class="landing-brand pixel">CL★Q!</div><button class="landing-link" id="jumpApp">OPEN PHOTOBOOTH
+            ↗</button>
+        </div>
+        <div class="hero-center">
+          <div>
+            <div class="pixel"
+              style="font-size:14px;color:#fff;text-shadow:1px 2px 0 #19749d;margin-bottom:18px;letter-spacing:.08em">
+              WELCOME TO THE LITTLE PHOTO DESKTOP</div>
+            <div class="hero-logo-wrap" aria-label="CLQ photobooth">
+              <span class="hero-doodle doodle-left">♡</span>
+              <span class="hero-doodle doodle-spark">✦</span>
+              <span class="hero-doodle doodle-cat">🤍</span>
+              <h1 class="hero-title pixel">CL★Q!</h1>
+              <span class="hero-doodle doodle-right">☆</span>
+              <span class="hero-doodle doodle-bubble">🫧</span>
+              <span class="hero-doodle doodle-cloud2">☁</span>
+              <span class="hero-doodle doodle-heart2">♡</span>
+            </div>
+            <p class="hero-sub">a cute y2k photobooth floating somewhere between a windows desktop, a digital sticker
+              drawer and a very shiny 2000s internet dream.</p>
+            <div class="hero-actions"><button class="aero-btn primary" id="startBtn">START PHOTOBOOTH ✦</button><button
+                class="aero-btn" id="seeStuff">SEE THE DESKTOP ↓</button></div>
+
+            <div class="hero-mini-row">
+              <div class="hero-mini-chip">♡ drag the windows</div>
+              <div class="hero-mini-chip">✦ click the frames</div>
+              <div class="hero-mini-chip">🫧 filters + stickers</div>
+            </div>
+          </div>
+        </div>
+        <div class="landing-note pixel">drag the little windows around. yes, they are actually movable ♡</div>
+        <div class="landing-windows">
+          <div class="window mini-window" style="position:absolute">
+            <div class="titlebar">
+              <div class="title">CL★Q! — frames.exe</div>
+              <div class="win-controls"><button class="win-btn">—</button><button class="win-btn close">×</button></div>
+            </div>
+            <div class="window-body"><img id="landingFrame1"
+                style="height:300px;width:100%;object-fit:contain;background:#eafaff;padding:8px;box-sizing:border-box"
+                alt="frame preview">
+              <div class="desktop-frame-nav"><button class="tiny-btn"
+                  id="homeFramePrev">‹</button><span>frames.exe</span><button class="tiny-btn"
+                  id="homeFrameNext">›</button></div>
+            </div>
+          </div>
+          <div class="window mini-window" style="position:absolute">
+            <div class="titlebar">
+              <div class="title">stickers — my favorites</div>
+              <div class="win-controls"><button class="win-btn">—</button><button class="win-btn close">×</button></div>
+            </div>
+            <div class="window-body">
+              <div style="font-size:46px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center">💙 🫧 ⭐ 🎀 🐱 📸 🌸
+                💿 🪩</div>
+            </div>
+          </div>
+          <div class="window mini-window" style="position:absolute">
+            <div class="titlebar">
+              <div class="title">layout picker</div>
+              <div class="win-controls"><button class="win-btn">—</button><button class="win-btn close">×</button></div>
+            </div>
+            <div class="window-body">
+              <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
+                <div class="layout-preview strip" style="height:110px"><i class="layout-cell"></i><i
+                    class="layout-cell"></i><i class="layout-cell"></i></div>
+                <div class="layout-preview grid2" style="height:110px"><i class="layout-cell"></i><i
+                    class="layout-cell"></i><i class="layout-cell"></i><i class="layout-cell"></i></div>
+                <div class="layout-preview grid3" style="height:110px"><i class="layout-cell"></i><i
+                    class="layout-cell"></i><i class="layout-cell"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="window mini-window" style="position:absolute">
+            <div class="titlebar">
+              <div class="title">cat.exe — adorable overflow</div>
+              <div class="win-controls"><button class="win-btn">—</button><button class="win-btn close">×</button></div>
+            </div>
+            <div class="window-body">
+              <div style="gap:6px;font-size:34px;line-height:1.1;text-align:center">
+                please enjoy cl★q! ~dea ✧ ♡</div>
+            </div>
+          </div>
+        </div>
+        <div class="home-status-row">
+          <div class="status-chip"><span class="led"></span> CL★Q! ONLINE</div>
+          <div class="status-chip">📡 connection: sparkling</div>
+          <div class="status-chip">💿 now playing: y2k radio</div>
+          <div class="status-chip">♡ visitors: 40,827</div>
+        </div>
+        <div class="home-desktop-wall" aria-label="CL★Q! desktop widgets">
+          <div class="window home-widget widget-notes">
+            <div class="titlebar">
+              <div class="title">notes.exe — today</div>
+              <div class="win-controls"><button class="win-btn">—</button><button class="win-btn close">×</button></div>
+            </div>
+            <div class="window-body">
+              <div class="sticky-note"><b>♡ CL★Q! TO-DO</b><br>take cute photos<br>add 3 sparkles<br>save a memory ✦
+              </div>
+            </div>
+          </div>
+          <div class="window home-widget widget-player">
+            <div class="titlebar">
+              <div class="title">radio.exe — cl★q mix</div>
+              <div class="win-controls"><button class="win-btn">—</button><button class="win-btn close">×</button></div>
+            </div>
+            <div class="window-body">
+              <div class="fake-player">
+                <div class="disc">✦</div>
+                <div><b>starlight.exe</b><small>dreamy y2k playlist</small></div><button>▶</button>
+              </div>
+              <div class="equalizer"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="window home-widget widget-weather">
+            <div class="titlebar">
+              <div class="title">weather.exe — aero forecast</div>
+              <div class="win-controls"><button class="win-btn">—</button><button class="win-btn close">×</button></div>
+            </div>
+            <div class="window-body">
+              <div class="weather-face">☀️</div>
+              <div class="weather-temp">24°</div>
+              <div class="weather-copy">perfectly shiny<br>with 100% sparkle</div>
+            </div>
+          </div>
+          <div class="window home-widget widget-chat">
+            <div class="titlebar">
+              <div class="title">guestbook.exe — leave a ♡</div>
+              <div class="win-controls"><button class="win-btn">—</button><button class="win-btn close">×</button></div>
+            </div>
+            <div class="window-body">
+              <div class="chat-bubble pink">this website is SO cute omg</div>
+              <div class="chat-bubble blue">the bubbles!! 🫧</div>
+              <div class="chat-bubble mint">taking a photo rn ☆</div>
+            </div>
+          </div>
+          <div class="window home-widget widget-paint">
+            <div class="titlebar">
+              <div class="title">paint.exe — doodle pad</div>
+              <div class="win-controls"><button class="win-btn">—</button><button class="win-btn close">×</button></div>
+            </div>
+            <div class="window-body">
+              <div class="doodle-pad">
+                <span>☆</span><span>♡</span><span>〰</span><span>✦</span><span>◌</span><span>☁</span>
+              </div>
+            </div>
+          </div>
+          <div class="window home-widget widget-trash">
+            <div class="titlebar">
+              <div class="title">recycle bin.exe</div>
+              <div class="win-controls"><button class="win-btn">—</button><button class="win-btn close">×</button></div>
+            </div>
+            <div class="window-body">
+              <div class="trash-icon">🗑️</div><small>nothing boring here ♡</small>
+            </div>
+          </div>
+        </div>
+        <div class="home-marquee"><span>✦ WELCOME TO CL★Q! ✦ MAKE A MEMORY ✦ SHAKE THE WINDOWS ✦ ADD SOME SPARKLE ✦ TAKE
+            A PHOTO ✦ WELCOME TO CL★Q! ✦</span></div>
+        <h2 class="section-title pixel make-yours-title">MAKE IT YOURS</h2>
+        <div class="landing-grid make-yours-grid">
+          <div class="aero-card">
+            <span class="card-eyebrow">✦ pick your mood</span>
+            <h3 class="pixel">01 / PICK</h3>
+            <p>Choose a layout and a frame. The whole desktop shifts into the frame's colors so the booth feels like one
+              big little world.</p>
+          </div>
+          <div class="aero-card">
+            <span class="card-eyebrow">♡ make it yours</span>
+            <h3 class="pixel">02 / DECORATE</h3>
+            <p>Open the sticker drawer and choose from the AQUA, KAWAII, CAT CLUB, and Y2K packs, then decorate your
+              strip.</p>
+          </div>
+          <div class="aero-card">
+            <span class="card-eyebrow">✧ save the sparkle</span>
+            <h3 class="pixel">03 / SAVE</h3>
+            <p>Save your finished strip as a cute still or turn the recorded photo clips into a tiny moving memory.</p>
+          </div>
+        </div>
+        <h2 class="section-title pixel shiny-desktop-title">A VERY SHINY DESKTOP</h2>
+        <div class="landing-grid shiny-desktop-grid">
+          <div class="aero-card">
+            <span class="card-eyebrow">🫧 drag + discover</span>
+            <h3 class="pixel">MOVABLE WINDOWS</h3>
+            <p>Every tool window has a classic blue title bar and can be dragged around the desktop.</p>
+          </div>
+          <div class="aero-card">
+            <span class="card-eyebrow">✦ frame fantasy</span>
+            <h3 class="pixel">20+ FRAMES</h3>
+            <p>All the original CL★Q! frames plus the new ZIP frame designs are available in the frame drawer.</p>
+          </div>
+          <div class="aero-card">
+            <span class="card-eyebrow">♡ tiny controls</span>
+            <h3 class="pixel">CUTE CONTROL</h3>
+            <p>Mirror, timer, filters, motion, stickers and tiny controls are all exposed instead of hidden behind
+              mystery buttons.</p>
+          </div>
+        </div><br><br><br><br><br><br>
+        <div class="home-sticker-playground" id="homeStickerPlayground" aria-label="draggable homepage stickers">
+          <span class="playground-label pixel">drag the sparkles ♡</span>
+          <button class="home-sticker" type="button" aria-label="drag heart">💗</button>
+          <button class="home-sticker" type="button" aria-label="drag sparkle">✨</button>
+          <button class="home-sticker" type="button" aria-label="drag bubble">🫧</button>
+          <button class="home-sticker" type="button" aria-label="drag bow">🎀</button>
+          <button class="home-sticker" type="button" aria-label="drag star">⭐</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-shell" id="appShell">
+      <div class="booth-topbar">
+        <button class="tiny-btn" id="boothHome">← desktop</button>
+        <div class="booth-brand pixel">CL★Q! <span>photobooth.exe</span></div>
+        <div class="booth-save-status" id="flowStatus">STEP 01 · SETUP</div>
+      </div>
+
+      <div class="flow-stepper" id="flowStepper">
+        <button class="flow-step active" data-go-step="1"><b>01</b><span>choose</span></button>
+        <i></i>
+        <button class="flow-step" data-go-step="2"><b>02</b><span>capture</span></button>
+        <i></i>
+        <button class="flow-step" data-go-step="3"><b>03</b><span>customise</span></button>
+        <i></i>
+        <button class="flow-step" data-go-step="4"><b>04</b><span>download</span></button>
+      </div>
+
+      <div class="flow-pages">
+        <!-- STEP 1 -->
+        <section class="flow-page active" data-step-page="1">
+          <div class="flow-heading">
+            <div>
+              <div class="pixel flow-kicker">01 / CHOOSE</div>
+              <h2>pick your layout</h2>
+              <p>Set the shape of your strip first. You'll choose your frame and decorate it in step 03.</p>
+            </div>
+            <div class="flow-badge">✦ setup first</div>
+          </div>
+          <div class="flow-grid two-side">
+            <div class="window flow-window" id="layoutWindow">
+              <div class="titlebar">
+                <div class="title">layouts.exe — choose your strip</div>
+                <div class="win-controls"><button class="win-btn" id="minLayout">—</button><button class="win-btn close"
+                    id="closeLayout">×</button></div>
+              </div>
+              <div class="window-body">
+                <div class="layout-grid" id="layoutGrid" style="padding:10px;"></div>
+              </div>
+            </div>
+            <div class="window preview-window" id="setupPreview">
+              <div class="titlebar">
+                <div class="title">preview.exe — your strip</div>
+                <div class="win-controls"><button class="win-btn" id="minSetupPreview">—</button></div>
+              </div>
+              <div class="window-body">
+                <div class="setup-preview">
+                  <div class="preview-world" id="setupWorld"></div><canvas id="setupCanvas"
+                    class="setup-canvas"></canvas>
+                </div>
+                <div class="selection-readout" id="selectionReadout">classic strip · bubble dream</div>
+              </div>
+            </div>
+          </div>
+          <div class="flow-next"><button class="aero-btn primary" id="toCapture">NEXT: OPEN CAMERA →</button></div>
+        </section>
+
+        <!-- STEP 2 -->
+        <section class="flow-page" data-step-page="2">
+          <div class="flow-heading">
+            <div>
+              <div class="pixel flow-kicker">02 / CAPTURE</div>
+              <h2>click your photos</h2>
+              <p>Choose a timer, then SNAP once. Every empty photo slot is captured in sequence. Motion clips are
+                recorded too, so your photos can move later.</p>
+            </div>
+            <div class="flow-badge" id="captureCount">0 / 4 photos</div>
+          </div>
+          <div class="capture-layout capture-desktop" id="captureDesktop">
+            <div class="window capture-preview-window" id="capturePreviewWindow">
+              <div class="titlebar">
+                <div class="title">preview.exe — live strip</div>
+                <div class="win-controls"><button class="win-btn" id="minCapturePreview">—</button></div>
+              </div>
+              <div class="window-body">
+                <div class="main-preview"><canvas id="stripCanvas" class="strip-preview"></canvas></div>
+                <div class="selection-readout">live preview · photos fill automatically</div>
+              </div>
+            </div>
+            <div class="window main-window flow-main" id="mainWindow">
+              <div class="titlebar">
+                <div class="title">camera.exe — CL★Q! photobooth</div>
+                <div class="win-controls"><button class="win-btn" id="minMain">—</button><button class="win-btn close"
+                    id="closeMain">×</button></div>
+              </div>
+              <div class="window-body">
+                <div class="stage-head">
+                  <div>
+                    <div class="stage-title pixel">photo booth</div>
+                    <div class="status" id="status">camera ready · choose a layout, then SNAP</div>
+                  </div>
+                </div>
+                <div class="camera-wrap" id="cameraWrap"><video id="video" autoplay playsinline muted></video>
+                  <div class="filter-tint" id="filterTint"></div>
+                  <div class="countdown" id="countdown"></div>
+                </div>
+                <div class="controls-row"><button class="tiny-btn" id="snapBtn">📸 SNAP ALL</button><button
+                    class="tiny-btn" id="uploadBtn">upload photo</button><input type="file" id="uploadInput"
+                    accept="image/*" hidden><button class="tiny-btn" id="mirrorBtn">mirror on</button><button
+                    class="tiny-btn" id="timerBtn" title="cycle countdown">3s</button><button class="tiny-btn"
+                    id="resetPhotosStep2">↺ reset photos</button></div>
+              </div>
+            </div>
+            <div class="window control-window capture-control" id="controlWindow">
+              <div class="titlebar">
+                <div class="title">filters.exe — camera controls</div>
+                <div class="win-controls"><button class="win-btn" id="minControl">—</button><button
+                    class="win-btn close" id="closeControl">×</button></div>
+              </div>
+              <div class="window-body">
+                <div class="control-section">
+                  <div class="control-label">FILTER PREVIEWS</div>
+                  <div class="filter-grid" id="filterGrid"></div>
+                </div>
+                <div class="control-section">
+                  <div class="control-label">COUNTDOWN</div>
+                  <div class="timer-grid" id="timerGrid"></div>
+                </div>
+                <div class="control-note">✦ SNAP ALL runs the selected countdown before every photo. Motion clips are
+                  captured automatically for later animation.</div>
+              </div>
+            </div>
+          </div>
+          <div class="flow-next"><button class="aero-btn" id="backChoose">← BACK</button><button
+              class="aero-btn primary" id="toCustomise">NEXT: CUSTOMISE →</button></div>
+        </section>
+
+        <!-- STEP 3 -->
+        <section class="flow-page" data-step-page="3">
+          <div class="flow-heading">
+            <div>
+              <div class="pixel flow-kicker">03 / CUSTOMISE</div>
+              <h2>make it yours</h2>
+              <p>Choose your frame, then decorate the strip with emoji stickers. Pick a frame, add emojis, and move them
+                around your preview.</p>
+            </div>
+            <div class="flow-badge">drag · layer · decorate</div>
+          </div>
+          <div class="custom-layout">
+            <div class="window customize-preview flow-main">
+              <div class="titlebar">
+                <div class="title">editor.exe — customise your strip</div>
+              </div>
+              <div class="window-body">
+                <div class="editor-stage">
+                  <div class="editor-bg" id="editorBg"></div><canvas id="customCanvas" class="custom-canvas"></canvas>
+                </div>
+                <div class="editor-help">✦ Add stickers from the window → then drag them on the strip. Double-click a
+                  sticker to remove it.</div>
+              </div>
+            </div>
+            <div class="window frame-window flow-window" id="frameWindow">
+              <div class="titlebar">
+                <div class="title">frames.exe — choose your world</div>
+                <div class="win-controls"><button class="win-btn" id="minFrames">—</button><button class="win-btn close"
+                    id="closeFrames">×</button></div>
+              </div>
+              <div class="window-body">
+                <div class="frame-picker-section">
+                  <div class="control-label">FRAMES</div>
+                  <div class="frame-nav-row"><button class="tiny-btn" id="flowFramePrev">‹</button><span>browse
+                      frames</span><button class="tiny-btn" id="flowFrameNext">›</button></div>
+                  <div class="frame-grid" id="frameGrid"></div>
+                </div>
+                <div class="frame-picker-section theme-picker-section">
+                  <div class="control-label">SOLID COLORS · GRADIENTS · FRUTIGER AERO</div>
+                  <div class="palette-grid" id="paletteGrid"></div>
+                </div>
+              </div>
+            </div>
+            <div class="window style-window flow-window" id="styleWindow">
+              <div class="titlebar">
+                <div class="title">style.exe — strip studio</div>
+              </div>
+              <div class="window-body">
+                <div class="style-section">
+                  <div class="control-label">BORDER</div>
+                  <div class="border-row"><button class="tiny-btn" id="borderOff">no border</button><label
+                      class="range-label">thickness <input type="range" id="borderWidth" min="0" max="10" step="1"
+                        value="3"><span id="borderWidthVal">3px</span></label></div>
+                </div>
+                <div class="style-section">
+                  <div class="control-label">PHOTO SIZE</div><label class="range-label full">make photos bigger /
+                    smaller <input type="range" id="photoScale" min=".72" max="1.12" step=".01" value="1"><span
+                      id="photoScaleVal">100%</span></label>
+                </div>
+                <div class="style-section">
+                  <div class="control-label">BOTTOM PADDING</div><label class="range-label full">space under the last
+                    photo <input type="range" id="bottomPad" min="0" max="180" step="2" value="28"><span
+                      id="bottomPadVal">28px</span></label>
+                </div><input id="captionInput" class="caption-input" maxlength="42" placeholder="add a tiny caption ✦">
+                <input id="captionColor" type="color" value="#ffffff" title="Caption colour"
+                  aria-label="Caption colour" />
+                <div class="control-section">
+                  <div class="control-label">FILTER — ADJUST ANYTIME</div>
+                  <div class="filter-grid" id="customFilterGrid"></div>
+                </div>
+                <div class="motion-grid"><button class="aero-btn" id="photoMotionBtn">🎞 photo motion:
+                    ON</button><button class="aero-btn" id="stickerMotionBtn">✨ sticker motion: ON</button></div><button
+                  class="aero-btn" id="resetPhotos">↺ reset photos</button>
+              </div>
+            </div>
+            <div class="window sticker-window flow-window" id="stickerWindow"
+              title="includes your restored uploaded sticker sheets">
+              <div class="titlebar">
+                <div class="title">stickers.exe — pick a pack</div>
+                <div class="win-controls"><button class="win-btn" id="minStickers">—</button><button
+                    class="win-btn close" id="closeStickers">×</button></div>
+              </div>
+              <div class="window-body">
+                <div class="tabs" id="stickerTabs"></div>
+                <div class="sticker-grid" id="stickerGrid"></div>
+                <div class="sticker-note">Tap a sticker, then drag it directly on the strip ♡</div>
+              </div>
+            </div>
+          </div>
+          <div class="flow-next"><button class="aero-btn" id="backCapture">← BACK</button><button
+              class="aero-btn primary" id="toDownload">NEXT: DOWNLOAD →</button></div>
+        </section>
+
+        <!-- STEP 4 -->
+        <section class="flow-page" data-step-page="4">
+          <div class="flow-heading">
+            <div>
+              <div class="pixel flow-kicker">04 / DOWNLOAD</div>
+              <h2>save your CL★Q! strip</h2>
+              <p>One last look, then save your finished strip as a photo or a moving video.</p>
+            </div>
+            <div class="flow-badge">memory complete ✦</div>
+          </div>
+          <div class="download-layout">
+            <div class="window final-preview flow-main">
+              <div class="titlebar">
+                <div class="title">preview.exe — final result</div>
+              </div>
+              <div class="window-body">
+                <div class="final-preview-box"><canvas id="finalCanvas" class="final-canvas"></canvas></div>
+                <div class="selection-readout" id="finalReadout">ready to save</div>
+              </div>
+            </div>
+            <div class="window download-window flow-window" id="downloadWindow">
+              <div class="titlebar">
+                <div class="title">downloads.exe — save your memories</div>
+                <div class="win-controls"><button class="win-btn" id="minDownload">—</button><button
+                    class="win-btn close" id="closeDownload">×</button></div>
+              </div>
+              <div class="window-body">
+                <div class="download-actions"><button class="big-download" id="downloadStrip">💚 SAVE
+                    STRIP</button><button class="secondary-download" id="downloadClean">save clean photo</button><button
+                    class="secondary-download" id="downloadAnimation">🎞 SAVE MOTION VIDEO</button>
+                  <div id="downloadMsg" style="font-size:10px;color:#4d7486;text-align:center;min-height:14px"></div>
+                </div>
+                <div class="download-tip">SAVE STRIP keeps your frame, caption and stickers. SAVE MOTION VIDEO exports a
+                  real WebM video of the moving photos + sticker animation.</div>
+              </div>
+            </div>
+          </div>
+          <div class="flow-next"><button class="aero-btn" id="backCustomise">← BACK</button><button
+              class="aero-btn primary" id="newBooth">START ANOTHER ✦</button></div>
+        </section>
+      </div>
+    </section>
+  </div>
+  <audio id="backgroundMusic" src="assets/frutiger-aero-playlist.mp3" loop preload="metadata"></audio>
+  <audio id="clickStartAudio" src="assets/clickstart.mp3" preload="auto"></audio>
+  <audio id="clickEndAudio" src="assets/clickend.mp3" preload="auto"></audio>
+  <audio id="shutterAudio" src="assets/camera-shutter.mp3" preload="auto"></audio>
+  <div class="volume-panel" id="volumePanel" hidden>
+    <div class="volume-panel-title">volume.exe</div>
+    <button class="volume-toggle" id="musicToggle" type="button">▶ play music</button>
+    <label class="volume-slider-label" for="musicVolume">volume <output id="musicVolumeValue">35%</output></label>
+    <input id="musicVolume" type="range" min="0" max="100" value="35">
+  </div>
+  <div class="taskbar"><button class="start" id="taskStart">⊞ CL★Q!</button><button class="task" id="taskPhoto">📷
+      photobooth</button><button class="task" id="taskFrames">🖼 frames</button><button class="task" id="taskStickers">✨
+      stickers</button>
+    <div class="dock-right">
+      <div class="dock-pet" id="dockPet" title="click to hide/show me"><img src="assets/cat.gif" alt="pixel cat">
+      </div><button class="dock-pet-toggle" id="dockPetToggle" type="button" title="show cat">🐱</button><button
+        class="task volume-task" id="volumeTask" type="button">🔊 music</button><button class="task notification-task"
+        id="notificationTask" type="button">💌 <span id="notificationCount">1</span></button>
+      <div class="notification-panel" id="notificationPanel" hidden>
+        <div class="notification-panel-head"><span>notifications.exe</span><button id="clearNotifications"
+            type="button">×</button></div>
+        <div class="notification-list" id="notificationList"></div>
+      </div>
+      <div class="clock" id="clock"></div>
+    </div>
+  </div>
+
+
+
+
+  <script src="js/cliq.js" defer></script>
+</body>
+
+</html>
