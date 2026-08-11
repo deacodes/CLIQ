@@ -4,9 +4,6 @@
 
 CL★Q! is a browser-based creative editor that turns photo and video editing into a playful, desktop-inspired experience.
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-ff69b4?style=flat-square)](https://deacodes.github.io/CL-Q/)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github)](https://github.com/deacodes/CL-Q)
-
 ## Description
 
 CL★Q! is a browser-based creative editing application designed around a cute, interactive desktop environment. Instead of presenting the user with a traditional photo or video editor, CL★Q! turns the editing process into an experience that resembles using a small, personalized computer.
