@@ -190,7 +190,7 @@ then visit the printed `localhost` URL.
 
 ## License
 
-Not yet specified. If you're consuming this repo, treat it as all-rights-reserved until a license is added. (Maintainer: add a license here before any public release, and confirm third-party stickers/fonts/sounds are compatible with it.)
+Not yet specified. 
 
 ---
 
