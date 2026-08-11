@@ -4,7 +4,7 @@
 
 CL★Q! is a browser-based photo/video editor built around a playful, `.exe`-style desktop metaphor. Instead of a conventional editor UI, tools (camera, filters, stickers, frames, captions, export) live in draggable windows on a fake desktop.
 
-**Repo:** https://github.com/deacodes/CL-Q
+**Repo:** https://github.com/deacodes/CL-Q_PHOTOBOOTH
 
 ---
 
