@@ -26,7 +26,9 @@ const FILTERS = {
   fade: 'contrast(.9) saturate(.75) brightness(1.12)',
   pop: 'contrast(1.18) saturate(1.55) brightness(1.04)',
   sugar: 'saturate(1.32) brightness(1.1) contrast(.92)',
-  mono: 'grayscale(1) contrast(1.25) brightness(1.05)'
+  mono: 'grayscale(1) contrast(1.25) brightness(1.05)',
+  grain: 'contrast(1.1) brightness(1.05)',
+  mblur: 'contrast(1.05) brightness(1.02)'
 };
 const __CLQ_INLINE_FRAMES = __CLQ_INLINE_ASSET_MANIFEST.frames || [];
 let FRAMES = __CLQ_INLINE_FRAMES.map(f => ({ ...f, src: f.src }));
@@ -1137,6 +1139,7 @@ function renderFolderTabs() {
 const notificationItems = [];
 function addNotification(message, icon = '✦') {
   notificationItems.unshift({ message, icon, time: new Date() });
+  playAssetSound('notifAudio');
   const list = $('#notificationList');
   if (list) {
     list.innerHTML = notificationItems.slice(0, 8).map(item => `<div class="notification-item">${item.icon} ${item.message}<time>${item.time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</time></div>`).join('');
@@ -1639,7 +1642,33 @@ const clipVideoCache = new Map();
 function getClipVideo(url) { if (clipVideoCache.has(url)) return clipVideoCache.get(url); const p = new Promise((resolve, reject) => { const v = document.createElement('video'); v.src = url; v.muted = true; v.playsInline = true; v.loop = true; v.preload = 'auto'; v.onloadedmetadata = () => resolve(v); v.onerror = reject; v.load() }); clipVideoCache.set(url, p); return p }
 function cover(ctx, im, x, y, w, h) { const iw = im.videoWidth || im.naturalWidth, ih = im.videoHeight || im.naturalHeight; if (!iw || !ih) return; const ir = iw / ih, cr = w / h; let dw = w, dh = h; if (ir > cr) dw = h * ir; else dh = w / ir; ctx.drawImage(im, x + (w - dw) / 2, y + (h - dh) / 2, dw, dh) }
 const FILTER_OVERLAYS = { pink: ['rgba(255,76,164,.20)', 'screen'], blue: ['rgba(42,155,255,.18)', 'screen'], film: ['rgba(255,193,91,.10)', 'multiply'], night: ['rgba(36,40,150,.18)', 'multiply'], peach: ['rgba(255,134,83,.18)', 'screen'], mint: ['rgba(45,213,167,.18)', 'screen'], lavender: ['rgba(150,100,255,.17)', 'screen'], chrome: ['rgba(255,255,255,.20)', 'screen'], retro: ['rgba(174,105,44,.16)', 'multiply'], cool: ['rgba(54,164,255,.15)', 'screen'], warm: ['rgba(255,159,54,.16)', 'screen'], fade: ['rgba(255,255,255,.22)', 'screen'], pop: ['rgba(255,40,142,.12)', 'screen'], sugar: ['rgba(255,154,224,.18)', 'screen'], soft: ['rgba(255,255,255,.06)', 'screen'], dream: ['rgba(255,245,255,.16)', 'screen'] };
-function paintFilterOverlay(ctx, id, x, y, w, h) { const o = FILTER_OVERLAYS[id]; if (!o) return; ctx.save(); ctx.globalCompositeOperation = o[1]; ctx.fillStyle = o[0]; ctx.fillRect(x, y, w, h); ctx.restore() }
+function paintFilterOverlay(ctx, id, x, y, w, h) {
+  if (id === 'grain') {
+    ctx.save();
+    ctx.globalAlpha = 0.15;
+    for (let i = 0; i < 4000; i++) {
+      const gx = Math.random() * w;
+      const gy = Math.random() * h;
+      const size = Math.random() * 1.5;
+      ctx.fillStyle = Math.random() > 0.5 ? '#fff' : '#000';
+      ctx.fillRect(x + gx, y + gy, size, size);
+    }
+    ctx.restore();
+    return;
+  }
+  if (id === 'mblur') {
+    // Basic directional blur simulated by drawing slightly offset copies
+    ctx.save();
+    ctx.globalAlpha = 0.3;
+    const offsets = [1, 2, 3];
+    offsets.forEach(off => {
+      ctx.drawImage(ctx.canvas, x, y, w, h, x + off, y, w, h);
+    });
+    ctx.restore();
+    return;
+  }
+  const o = FILTER_OVERLAYS[id]; if (!o) return; ctx.save(); ctx.globalCompositeOperation = o[1]; ctx.fillStyle = o[0]; ctx.fillRect(x, y, w, h); ctx.restore()
+}
 let anim = null, animT = 0, animBusy = false;
 function startAnim() { cancelAnimationFrame(anim); const tick = async () => { if (!state.animate) return; if (animBusy) { anim = requestAnimationFrame(tick); return } animBusy = true; animT += .033; try { await drawCustom() } finally { animBusy = false } if (state.animate) anim = requestAnimationFrame(tick) }; tick() }
 async function drawCustom() { const c = $('#customCanvas'); if (!c) return; await drawStrip(c, true, state.animate, false) }
