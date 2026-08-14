@@ -1,0 +1,466 @@
+{
+  "version": 2,
+  "generatedBy": "tools/generate_asset_manifest.py",
+  "frames": [
+    {
+      "id": "01-bubble-dream",
+      "label": "01 Bubble Dream",
+      "src": "assets/frames/01-bubble-dream.jpg"
+    },
+    {
+      "id": "02-manga-noir",
+      "label": "02 Manga Noir",
+      "src": "assets/frames/02-manga-noir.jpg"
+    },
+    {
+      "id": "03-sushi-noir",
+      "label": "03 Sushi Noir",
+      "src": "assets/frames/03-sushi-noir.jpg"
+    },
+    {
+      "id": "04-pink-polka",
+      "label": "04 Pink Polka",
+      "src": "assets/frames/04-pink-polka.jpg"
+    },
+    {
+      "id": "05-apple-grid",
+      "label": "05 Apple Grid",
+      "src": "assets/frames/05-apple-grid.jpg"
+    },
+    {
+      "id": "06-leopard-dream",
+      "label": "06 Leopard Dream",
+      "src": "assets/frames/06-leopard-dream.jpg"
+    },
+    {
+      "id": "07-cinnamoroll-blue",
+      "label": "07 Cinnamoroll Blue",
+      "src": "assets/frames/07-cinnamoroll-blue.jpg"
+    },
+    {
+      "id": "08-kuromi-lilac",
+      "label": "08 Kuromi Lilac",
+      "src": "assets/frames/08-kuromi-lilac.jpg"
+    },
+    {
+      "id": "09-strawberry-pink",
+      "label": "09 Strawberry Pink",
+      "src": "assets/frames/09-strawberry-pink.jpg"
+    },
+    {
+      "id": "10-doodle-black",
+      "label": "10 Doodle Black",
+      "src": "assets/frames/10-doodle-black.jpg"
+    },
+    {
+      "id": "11-blue-stars",
+      "label": "11 Blue Stars",
+      "src": "assets/frames/11-blue-stars.jpg"
+    },
+    {
+      "id": "12-denim-collage",
+      "label": "12 Denim Collage",
+      "src": "assets/frames/12-denim-collage.jpg"
+    },
+    {
+      "id": "13-pink-bows",
+      "label": "13 Pink Bows",
+      "src": "assets/frames/13-pink-bows.jpg"
+    },
+    {
+      "id": "14-berry-bloom",
+      "label": "14 Berry Bloom",
+      "src": "assets/frames/14-berry-bloom.jpg"
+    },
+    {
+      "id": "15-film-strip",
+      "label": "15 Film Strip",
+      "src": "assets/frames/15-film-strip.jpg"
+    },
+    {
+      "id": "16-aero-chrome",
+      "label": "16 Aero Chrome",
+      "src": "assets/frames/16-aero-chrome.svg"
+    },
+    {
+      "id": "17-bubble-pop",
+      "label": "17 Bubble Pop",
+      "src": "assets/frames/17-bubble-pop.svg"
+    },
+    {
+      "id": "18-pixel-garden",
+      "label": "18 Pixel Garden",
+      "src": "assets/frames/18-pixel-garden.svg"
+    },
+    {
+      "id": "19-lavender-star",
+      "label": "19 Lavender Star",
+      "src": "assets/frames/19-lavender-star.svg"
+    },
+    {
+      "id": "20-strawberry-soda",
+      "label": "20 Strawberry Soda",
+      "src": "assets/frames/20-strawberry-soda.svg"
+    },
+    {
+      "id": "21-aqua-checker",
+      "label": "21 Aqua Checker",
+      "src": "assets/frames/21-aqua-checker.svg"
+    },
+    {
+      "id": "22-aqua-pool",
+      "label": "22 Aqua Pool",
+      "src": "assets/frames/22-aqua-pool.jpg"
+    },
+    {
+      "id": "23-blue-gingham",
+      "label": "23 Blue Gingham",
+      "src": "assets/frames/23-blue-gingham.jpg"
+    },
+    {
+      "id": "24-piano-noir",
+      "label": "24 Piano Noir",
+      "src": "assets/frames/24-piano-noir.jpg"
+    },
+    {
+      "id": "25-cinnamoroll-sky",
+      "label": "25 Cinnamoroll Sky",
+      "src": "assets/frames/25-cinnamoroll-sky.jpg"
+    },
+    {
+      "id": "26-red-apple-bows",
+      "label": "26 Red Apple Bows",
+      "src": "assets/frames/26-red-apple-bows.jpg"
+    }
+  ],
+  "stickerPacks": [
+    {
+      "id": "bakery",
+      "label": "BAKERY 🍰",
+      "directory": "assets/stickers/bakery",
+      "files": [
+        "cats_extra_01.png",
+        "cats_extra_02.png",
+        "cats_extra_03.png",
+        "cats_extra_04.png",
+        "cats_extra_05.png",
+        "cats_extra_06.png",
+        "cats_extra_08.png",
+        "cats_extra_09.png",
+        "cats_extra_10.png",
+        "cats_extra_11.png",
+        "cats_extra_12.png",
+        "cats_extra_13.png",
+        "cats_extra_14.png",
+        "cats_extra_15.png",
+        "cats_extra_16.png",
+        "cats_extra_17.png",
+        "cats_extra_18.png",
+        "sticker_002.png",
+        "sticker_003.png",
+        "sticker_004.png",
+        "sticker_005.png",
+        "sticker_007.png",
+        "sticker_008.png",
+        "sticker_009.png",
+        "sticker_010.png",
+        "sticker_012.png",
+        "sticker_014.png"
+      ]
+    },
+    {
+      "id": "cameras",
+      "label": "CAMERAS 📸",
+      "directory": "assets/stickers/cameras",
+      "files": [
+        "sticker_001.png",
+        "sticker_003.png",
+        "sticker_007.png",
+        "sticker_008.png",
+        "sticker_010.png",
+        "sticker_011.png",
+        "sticker_013.png",
+        "sticker_014.png",
+        "sticker_015.png",
+        "sticker_016.png",
+        "sticker_017.png",
+        "sticker_018.png",
+        "sticker_019.png",
+        "sticker_020.png",
+        "sticker_021.png"
+      ]
+    },
+    {
+      "id": "cats",
+      "label": "CATS 🐱",
+      "directory": "assets/stickers/cats",
+      "files": [
+        "sticker_01.png",
+        "sticker_02.png",
+        "sticker_03.png",
+        "sticker_04.png",
+        "sticker_06.png",
+        "sticker_07.png",
+        "sticker_08.png",
+        "sticker_09.png",
+        "sticker_10.png",
+        "sticker_12.png",
+        "sticker_13.png",
+        "sticker_14.png",
+        "sticker_15.png",
+        "sticker_16.png"
+      ]
+    },
+    {
+      "id": "japanese",
+      "label": "JAPANESE 🌸",
+      "directory": "assets/stickers/japanese",
+      "files": [
+        "sticker_001.png",
+        "sticker_002.png",
+        "sticker_003.png",
+        "sticker_004.png",
+        "sticker_005.png",
+        "sticker_006.png",
+        "sticker_007.png",
+        "sticker_008.png",
+        "sticker_009.png",
+        "sticker_010.png",
+        "sticker_011.png",
+        "sticker_012.png",
+        "sticker_013.png",
+        "sticker_014.png",
+        "sticker_015.png",
+        "sticker_016.png",
+        "sticker_017.png",
+        "sticker_018.png",
+        "sticker_019.png",
+        "sticker_020.png",
+        "sticker_021.png",
+        "sticker_022.png",
+        "sticker_023.png",
+        "sticker_024.png",
+        "sticker_025.png",
+        "sticker_026.png",
+        "sticker_027.png",
+        "sticker_028.png",
+        "sticker_029.png",
+        "sticker_030.png"
+      ]
+    },
+    {
+      "id": "music",
+      "label": "MUSIC 🎧",
+      "directory": "assets/stickers/music",
+      "files": [
+        "sticker_001.png",
+        "sticker_002.png",
+        "sticker_003.png",
+        "sticker_004.png",
+        "sticker_005.png",
+        "sticker_006.png",
+        "sticker_007.png",
+        "sticker_008.png",
+        "sticker_009.png",
+        "sticker_010.png",
+        "sticker_011.png",
+        "sticker_012.png",
+        "sticker_013.png",
+        "sticker_014.png",
+        "sticker_015.png",
+        "sticker_016.png",
+        "sticker_017.png",
+        "sticker_018.png",
+        "sticker_019.png",
+        "sticker_020.png",
+        "sticker_021.png",
+        "sticker_022.png",
+        "sticker_023.png",
+        "sticker_024.png",
+        "sticker_025.png"
+      ]
+    },
+    {
+      "id": "random",
+      "label": "RANDOM ♡",
+      "directory": "assets/stickers/random",
+      "files": [
+        "sticker_001.png",
+        "sticker_002.png",
+        "sticker_003.png",
+        "sticker_004.png",
+        "sticker_005.png",
+        "sticker_006.png",
+        "sticker_007.png",
+        "sticker_008.png",
+        "sticker_009.png",
+        "sticker_010.png",
+        "sticker_011.png",
+        "sticker_012.png",
+        "sticker_013.png",
+        "sticker_014.png",
+        "sticker_015.png",
+        "sticker_016.png",
+        "sticker_017.png",
+        "sticker_018.png",
+        "sticker_019.png",
+        "sticker_020.png",
+        "sticker_021.png",
+        "sticker_022.png",
+        "sticker_023.png",
+        "sticker_024.png",
+        "sticker_025.png",
+        "sticker_026.png",
+        "sticker_027.png",
+        "sticker_028.png",
+        "sticker_029.png",
+        "sticker_030.png",
+        "sticker_031.png",
+        "sticker_032.png",
+        "sticker_033.png",
+        "sticker_034.png",
+        "sticker_035.png",
+        "sticker_036.png",
+        "sticker_037.png",
+        "sticker_038.png",
+        "sticker_039.png",
+        "sticker_040.png",
+        "sticker_041.png",
+        "sticker_042.png",
+        "sticker_043.png",
+        "sticker_044.png",
+        "sticker_045.png",
+        "sticker_046.png",
+        "sticker_047.png",
+        "sticker_048.png",
+        "sticker_049.png",
+        "sticker_050.png",
+        "sticker_051.png"
+      ]
+    },
+    {
+      "id": "redkawaii",
+      "label": "RED KAWAII 🎀",
+      "directory": "assets/stickers/redkawaii",
+      "files": [
+        "sticker_001.png",
+        "sticker_002.png",
+        "sticker_003.png",
+        "sticker_004.png",
+        "sticker_005.png",
+        "sticker_006.png",
+        "sticker_007.png",
+        "sticker_008.png",
+        "sticker_009.png",
+        "sticker_010.png",
+        "sticker_011.png",
+        "sticker_012.png",
+        "sticker_013.png",
+        "sticker_014.png",
+        "sticker_015.png",
+        "sticker_016.png",
+        "sticker_017.png",
+        "sticker_018.png",
+        "sticker_019.png",
+        "sticker_020.png",
+        "sticker_021.png",
+        "sticker_022.png"
+      ]
+    },
+    {
+      "id": "retro",
+      "label": "RETRO 📼",
+      "directory": "assets/stickers/retro",
+      "files": [
+        "sticker_001.png",
+        "sticker_002.png",
+        "sticker_003.png",
+        "sticker_004.png",
+        "sticker_005.png",
+        "sticker_006.png",
+        "sticker_007.png",
+        "sticker_008.png",
+        "sticker_009.png",
+        "sticker_010.png",
+        "sticker_011.png",
+        "sticker_012.png",
+        "sticker_013.png",
+        "sticker_014.png",
+        "sticker_015.png",
+        "sticker_016.png",
+        "sticker_017.png",
+        "sticker_018.png",
+        "sticker_019.png",
+        "sticker_020.png",
+        "sticker_021.png",
+        "sticker_022.png",
+        "sticker_023.png",
+        "sticker_024.png",
+        "sticker_025.png",
+        "sticker_026.png",
+        "sticker_027.png",
+        "sticker_028.png",
+        "sticker_029.png"
+      ]
+    },
+    {
+      "id": "strawberry",
+      "label": "STRAWBERRY ♡",
+      "directory": "assets/stickers/strawberry",
+      "files": [
+        "sticker_001.png",
+        "sticker_002.png",
+        "sticker_003.png",
+        "sticker_004.png",
+        "sticker_005.png",
+        "sticker_006.png",
+        "sticker_007.png",
+        "sticker_008.png",
+        "sticker_009.png",
+        "sticker_010.png",
+        "sticker_011.png",
+        "sticker_012.png",
+        "sticker_013.png",
+        "sticker_014.png",
+        "sticker_015.png",
+        "sticker_016.png",
+        "sticker_017.png",
+        "sticker_018.png",
+        "sticker_019.png",
+        "sticker_020.png",
+        "sticker_021.png",
+        "sticker_022.png",
+        "sticker_023.png",
+        "sticker_024.png",
+        "sticker_025.png",
+        "sticker_026.png",
+        "sticker_027.png",
+        "sticker_028.png",
+        "sticker_029.png",
+        "sticker_030.png",
+        "sticker_031.png",
+        "sticker_032.png",
+        "sticker_033.png",
+        "sticker_034.png",
+        "sticker_035.png",
+        "sticker_036.png",
+        "sticker_037.png",
+        "sticker_038.png",
+        "sticker_039.png",
+        "sticker_040.png",
+        "sticker_041.png",
+        "sticker_042.png",
+        "sticker_043.png",
+        "sticker_044.png",
+        "sticker_045.png",
+        "sticker_046.png",
+        "sticker_047.png",
+        "sticker_048.png",
+        "sticker_049.png",
+        "sticker_050.png",
+        "sticker_051.png",
+        "sticker_052.png"
+      ]
+    }
+  ]
+}
